@@ -40,3 +40,19 @@ Add this line (example):
 ```
 
 ✅ This proof must be visible in your browser screenshot submission.
+
+# Footer Date Implementation
+The footer includes a dynamic date display to reflect the most recent user session/deployment.
+
+    - Requirement: The footer must display the current date in DD Mon YYYY format.
+    - Generation Method: Client-side JavaScript (Option A) fetches the current system date on page load and injects it into the DOM.
+    - Note: Date updated during deployment/runtime.
+
+<span id='deployDate'></span>
+
+<script>
+  document.getElementById('deployDate').textContent = 
+    new Date().toLocaleDateString('en-GB', {
+      day: '2-digit', month: 'short', year: 'numeric'
+    });
+</script>
