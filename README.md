@@ -47,7 +47,7 @@ The footer includes a dynamic date display to reflect the most recent user sessi
     - Requirement: The footer must display the current date in DD Mon YYYY format.
     - Generation Method: Client-side JavaScript (Option A) fetches the current system date on page load and injects it into the DOM.
     - Note: Date updated during deployment/runtime.
-
+```html
 <span id='deployDate'></span>
 
 <script>
@@ -56,3 +56,4 @@ The footer includes a dynamic date display to reflect the most recent user sessi
       day: '2-digit', month: 'short', year: 'numeric'
     });
 </script>
+```
